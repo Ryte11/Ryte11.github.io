@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Mapa de la República Dominicana</title>
+    <script src="javascript/mapa.js"></script>
+    <meta charset="UTF-8" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/Mapa.css" />
+    <script src="https://kit.fontawesome.com/20f9d7f848.js" crossorigin="anonymous"></script>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/20f9d7f848.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Mapa</title>
+  </head>
+
+  <body>
+    <header >
+
+      <div class="header1">
+        <button id="abrir" class="abrir-menu"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="abrir" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>
+        </button>
+      </div>    
+        <a href="index.html" class="a" > <img class="logo" src="img/logo. png" alt=""></a>
+      
+      <nav class="header" id="nav" >
+  
+          <button class="cerrar-menu" id="cerrar"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="46" fill="currentColor" class="cerrar" viewBox="0 0 16 16">
+              <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </button>
+    
+            <div class="lista">
+              <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Denuncias-html.html">Denuncias</a></li>
+                <li><a href="qn.html">Quienes somos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="Dispositivo.html">Dispositivo</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>
+                <li>
+                    <button class="iconocampana" onclick="openModal()" style="background-color: white; color: black;">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="36"
+                          height="36"
+                          fill="currentColor"
+                          class="icon"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+                          />
+                        </svg>
+                      </button>
+                </li>
+              </ul>    
+            </div>   
+          </nav> 
+    </header>
+     
+     
+    
+      
+      
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="width: 100%; " class="wave" >
+        <path
+          fill="#2a5298"
+          fill-opacity="1"
+          d="M0,96L48,101.3C96,107,192,117,288,149.3C384,
+            181,480,235,576,229.3C672,224,768,160,864,133.3C960,107,1056,117,1152,133.3C1248,149,1344,
+            171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,
+            320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+
+      <div class="mapatitulo">
+        <div class="todoslostextos">
+          <h1 class="estilo_titulo1">Lugares</h1>
+
+          <div class="svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="5=30"
+              height="40"
+              fill="currentColor"
+              class="bi bi-geo-alt-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+              />
+            </svg>
+          </div>
+
+          <div id="modal-container">
+            <div id="modal-content">
+              <p class="textocontenet">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  padd
+                  height="16"
+                  fill="currentColor"
+                  class="circle-fill"
+                  viewBox="0 0 16 16"
+                  color="red"
+                >
+                  <circle cx="8" cy="8" r="8" />
+                </svg>
+                Nagua tiene una nueva zona roja sea formo <br /><br />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="circle-fill"
+                  viewBox="0 0 16 16"
+                  color="red"
+                >
+                  <circle cx="8" cy="8" r="8" />
+                </svg>
+                Ya fue respondido tu mensage (revisa tu chat privado)
+                <br /><br />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="circle-fill"
+                  viewBox="0 0 16 16"
+                  color="red"
+                >
+                  <circle cx="8" cy="8" r="8" /></svg>Comfirma tu correo electronico <br /><br />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="circle-fill"
+                  viewBox="0 0 16 16"
+                  color="red"
+                >
+                  <circle cx="8" cy="8" r="8" />
+                </svg>
+                Se registro tu usuario (no olvides tu contraseña) <br />
+              </p>
+              <span class="close-btn" onclick="closeModal()"
+                ><p>Cerrar</p></span>
+            </div>
+          </div>
+
+          <p class="mapasubtitulo">
+            Son marcas la cuales señales representan zonas que se nosotros
+            clasificamos como ruidosas o no gracias a la información que
+            almacenamos.
+          </p>
+
+          <h1 class="estilo_titulo2">Dispositivo</h1>
+
+          <div class="svg2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="56"
+              height="66"
+              fill="currentColor"
+              class="bi bi-volume-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12zM6.312 6.39 8 5.04v5.92L6.312 9.61A.5.5 0 0 0 6 9.5H4v-3h2a.5.5 0 0 0 .312-.11M12.025 8a4.5 4.5 0 0 1-1.318 3.182L10 10.475A3.5 3.5 0 0 0 11.025 8 3.5 3.5 0 0 0 10 5.525l.707-.707A4.5 4.5 0 0 1 12.025 8"
+              />
+            </svg>
+          </div>
+
+          <p class="mapasubtitulo">
+            Es el icono con el cual al momento de hacer clic en alguno de los
+            lugares o zonas podrás recocer en que lugar de esa zona hay un
+            dispositivo NES operativo.
+          </p>
+        </div>
+        <div class="mapaimagen">
+            <div id="map" class="imagenmap"></div>
+            <div id="map2" class="imagenmap2"></div>
+    
+      
+          
+        </div>
+      </div>
+     
+      <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="margin-top: -30px; " 
+     class="svg1">
+      <path
+        fill="#2a5298"
+        fill-opacity="1"
+        d="M0,128L60,144C120,160,240,192,360,170.7C480,149,600,75,720,69.3C840,64,960,128,1080,165.3C1200,203,1320,213,1380,218.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+
+    <div class="footer-basic">
+      <footer>
+        <div style="margin-bottom: -10px" class="hero__waves"></div>
+        <div class="social">
+          <a href="https://www.instagram.com/nes29448/"
+            ><i class="icon ion-social-instagram"></i
+          ></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="https://twitter.com/Nes39489676"
+            ><i class="icon ion-social-twitter"></i
+          ></a>
+          <a
+            href="https://m.facebook.com/story.php?story_fbid=1254163131833931&substory_index=1254163131833931&id=100089342328341&sfnsn=mo&mibextid=RUbZ1f"
+            ><i class="icon ion-social-facebook"></i
+          ></a>
+        </div>
+
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="index.html">Home</a></li>
+          <li class="list-inline-item">
+            <a href="Denuncias-html.html">Denuncias</a>
+          </li>
+          <li class="list-inline-item"><a href="qn.html">Quienes Somos</a></li>
+          <li class="list-inline-item">
+            <a href="Dispositivo.html">Dispositivos</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="Contactos.html">Contactanos</a>
+          </li>
+        </ul>
+        <p class="copyright">Company NES © 2023</p>
+      </footer>
+    </div>
+
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/Mapajs.js"></script>
+
+    <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+          defer
+        ></script>
+  </body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Quienes somos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/qn.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/20f9d7f848.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header1">
+        <button id="abrir" class="abrir-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            fill="currentColor"
+            class="abrir"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <a href="index.html" class="a"> <img class="logo" src="img/logo. png" alt="" /></a>
+
+      <nav class="header" id="nav">
+        <button class="cerrar-menu" id="cerrar">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="60"
+            height="46"
+            fill="currentColor"
+            class="cerrar"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </button>
+
+        <div class="lista">
+          <ul class="nav-list">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="Denuncias-html.html">Denuncias</a></li>
+            <li><a href="qn.html">Quienes somos</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="Dispositivo.html">Dispositivo</a></li>
+            <li><a href="Contactos.html">Contactos</a></li>
+            <li>
+              <button class="iconocampana" onclick="openModal()" style="background-color: white; border: none;">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    fill="currentColor"
+                    class="icon"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"
+                    />
+                  </svg>
+                </button>
+          </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="modal-container">
+        <div id="modal-content">
+          <p class="textocontenet">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              padd
+              height="16"
+              fill="currentColor"
+              class="circle-fill"
+              viewBox="0 0 16 16"
+              color="red"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            Nagua tiene una nueva zona roja sea formo <br /><br />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="circle-fill"
+              viewBox="0 0 16 16"
+              color="red"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            Ya fue respondido tu mensage (revisa tu chat privado)
+            <br /><br />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="circle-fill"
+              viewBox="0 0 16 16"
+              color="red"
+            >
+              <circle cx="8" cy="8" r="8" /></svg>Comfirma tu correo electronico <br /><br />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="circle-fill"
+              viewBox="0 0 16 16"
+              color="red"
+            >
+              <circle cx="8" cy="8" r="8" />
+            </svg>
+            Se registro tu usuario (no olvides tu contraseña) <br />
+          </p>
+          <span class="close-btn" onclick="closeModal()"><p>Cerrar</p></span>
+        </div>
+      </div>
+    </header>
+
+    <div style="margin-bottom: -10px" class="hero__waves">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="width: 100%"
+      >
+        <path
+          fill="#2a5298"
+          fill-opacity="1"
+          d="M0,96L48,101.3C96,107,192,117,288,149.3C384,181,480,235,576,229.3C672,224,768,160,864,133.3C960,107,1056,117,1152,133.3C1248,149,1344,171,1392,181.3L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+
+    <div style="display: flex" class="hero">
+      <div style="display: flex; justify-content: center">
+        <div class="container1">
+          <img class="img3" src="img/img3.webp" alt="" style="object-fit: cover;"/>
+
+          <div class="contenedor">
+            <div class="title">
+              <h1>¿Quié<b >nes </b>Somos?</h1>
+              <div class="parrafo">
+                <p>
+                  Bienvenido a <b>NES</b>, la solución contra la<b> contaminación sonora.</b> 
+                  Somos una empresa dedicada a crear dispositivos que buscan
+                  acabar con el ruido en comunidades, promoviendo la paz y el
+                  descanso en todo el país. Nuestra misión es abarcar la mayoría
+                  de barrios, permitiendo a las personas dormir sin molestias por
+                  música a alto volumen.
+                </p>
+                <br />
+                <p>
+                  Como empresa ética y comprometida, aspiramos a reducir las
+                  denuncias anuales por ruido en la República Dominicana.
+                  Valoramos la honestidad, solidaridad, empatía y puntualidad.<b> NES</b> 
+                  nació de la necesidad de un grupo de amigos de estudiar en paz
+                  en un entorno ruidoso. Ahora, convertimos esa experiencia en una
+                  oportunidad para mejorar la salud auditiva y la tranquilidad de
+                  todos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="title2">
+        <h1>¿Por qué nos escoges?</h1>
+      </div>
+      <div class="container3">
+      
+        <div class="cont1">
+          
+  
+            <h1 class="titulo2">Nuestra misión</h1>
+            
+              <svg xmlns="http://www.w3.org/2000/svg" width="96" height="90" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16" style="margin-top: 65px;">
+                <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+              </svg>
+  
+              <br/>
+            
+              <button class="button1" onclick="openModal1()">Ver mas..</button>   
+        </div>
+  
+        <!-- visionnn -->
+  
+        <div class="cont2">
+          
+            <h1 class="titulo2">Nuestra Visión</h1>
+            
+            
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-graph-up-arrow" viewBox="0 0 16 16" style="margin-top: 70px;">
+              <path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"/>
+            </svg>
+            <br/>
+            
+            <button class="button2" onclick="openModal3()">Ver mas..</button>
+         
+        </div>
+  
+  
+        <!-- valores -->
+  
+  
+        <div class="cont3">
+          
+            <h1 class="titulo2">Nuestros Valores</h1>
+            
+            <i class="fa-solid fa-heart fa-2xl" style="margin-top: 106px; font-size: 90px; "></i>  
+            </br>        
+          
+           <button class="button3" onclick="openModal2()">Ver mas..</button>
+          
+        </div>
+       
+      </div>
+  
+  
+      <div class="modal-container2" id="modal-container2">
+  
+  
+        <div class="modal-content2">
+          <p class="textocontenet2">
+          <ul class="lista">
+            <li><b>- Compromiso con la calidad de vida:</b>
+              <br/>
+              Priorizamos el bienestar de las personas, promoviendo ambientes
+              tranquilos y saludables.</li>
+    
+            <br/>
+            <li><b>- Ética empresarial:</b> 
+              <br/>
+              Operamos con integridad y ética, priorizando el bienestar de las personas y
+              cumpliendo nuestra misión social.</li>
+    
+            <br />
+            <li><b>- Innovación tecnológica:</b>
+              <br/>
+               Buscamos soluciones creativas y efectivas para combatir la contaminación
+              sonora a través de dispositivos avanzados.
+            </li>
+    
+    
+    
+          </ul>
+          </p>
+          <br />
+          <span id="close-btn" class="close-btn1" onclick="closeModal2()">
+            <p>Cerrar</p>
+          </span>
+    
+        </div>
+      </div>
+    
+  
+  <!-- vision -->
+  
+  
+        <div class="modal-container3" id="vision">
+  
+  
+          <div class="modal-content3">
+            <p class="textocontenet3">
+             Aspiramos a ser una empresa la cual resuelve ese problema por el cual
+            RD ha pasado desde hace muchos años, aspiramos a bajar la cantidad de
+            denuncias hechas por ruido <b>anualmente</b>, ya que con el paso de los años
+            han ido aumentando.
+            </p>
+            <br />
+            <span id="close-btn" class="close-btn2" onclick="closeModal3()">
+              <p>Cerrar</p>
+            </span>
+      
+          </div>
+        </div>
+  
+  <!-- mision -->
+  
+          <div class="modal-container1" id="modal-container1">
+  
+  
+            <div class="modal-content1">
+              <p class="textocontenet1">
+               
+                  Lograr cubrir la gran mayoría de <b>barrios y comunidad﻿es</b> del país, no
+                  solo las zonas por las que vivan personas importantes, sino todo el
+                  país, esto con el fin de conservar la paz sonora en los ambientes de
+                  nuestro país, y no solo eso, buscamos reducir arduamente las denuncias debeido a ruido con nuestro dispositivo.
+               
+              </p>
+              <br />
+              <span id="close-btn" class="close-btn2" onclick="closeModal1()">
+                <p>Cerrar</p>
+              </span>
+        
+            </div>
+    
+          </div>
+    </div>
+    
+    
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+      style="margin-top: -30px; " 
+     class="svg">
+      <path
+        fill="#1e3c72"
+        fill-opacity="1"
+        d="M0,128L60,144C120,160,240,192,360,170.7C480,149,600,75,720,69.3C840,64,960,128,1080,165.3C1200,203,1320,213,1380,218.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+      ></path>
+    </svg>
+    
+    
+    
+  
+       
+    <div class="footer-basic">
+        <footer>    
+    
+            <div class="social">
+              <a href="https://www.instagram.com/nes29448/"><i class="icon ion-social-instagram"></i></a>
+              <a href="https://mail.google.com/mail/u/0/#inbox"><i class="fa-solid fa-envelope"></i></a>
+              <a href="https://twitter.com/Nes39489676"><i class="icon ion-social-twitter"></i></a>
+              <a href="https://m.facebook.com/story.php?story_fbid=1254163131833931&substory_index=1254163131833931&id=100089342328341&sfnsn=mo&mibextid=RUbZ1f"><i class="icon ion-social-facebook"></i></a>
+          </div>
+    
+          <ul class="list-inline">
+              <li class="list-inline-item"><a href="index.html">Home</a></li>
+              <li class="list-inline-item"><a href="Denuncias-html.html">Denuncias</a></li>
+              <li class="list-inline-item"><a href="qn.html">Quienes Somos</a></li>
+              <li class="list-inline-item"><a href="Dispositivo.html">Dispositivos</a></li>
+              <li class="list-inline-item"><a href="Contactos.html">Contactanos</a></li>
+          </ul>
+            <p class="copyright">Company NES © 2023</p>
+        </footer>
+    </div>
+    <script src="javascript/qns.js"></script>
+    <script src="javascript/mapa.js"></script>
+    <script src="javascript/menu.js"></script>
+   
+  </body>
+</html>
